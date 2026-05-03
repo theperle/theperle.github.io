@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKAN | 家具のサブスクリプション</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="#" class="header__logo">SKAN</a>
+        <nav class="header__nav">
+          <a href="#features">特徴</a>
+          <a href="#plans">プラン</a>
+          <a href="#flow">ご利用の流れ</a>
+        </nav>
+        <a href="#plans" class="header__cta">無料で始める</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__label">Furniture Subscription</p>
+        <h1 class="hero__title">暮らしに、<br />上質な家具を。</h1>
+        <p class="hero__desc">
+          好きな家具を選んで、毎月定額でご自宅へ。<br />
+          ライフスタイルに合わせて、いつでも交換・返却できます。
+        </p>
+        <div class="hero__actions">
+          <a href="#plans" class="btn btn--primary">プランを見る</a>
+          <a href="#features" class="btn btn--outline">詳しく知る</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__visual-inner"></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+      <div class="features__inner">
+        <p class="section-label">Features</p>
+        <h2 class="section-title">SKANが選ばれる<br />3つの理由</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__item-icon features__item-icon--1">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="28" width="32" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M14 28V20a2 2 0 012-2h16a2 2 0 012 2v8" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 18V14a2 2 0 012-2h4a2 2 0 012 2v4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="features__item-title">好きな家具を自由に選べる</h3>
+            <p class="features__item-text">500点以上の厳選された北欧・ジャパニーズモダン家具から、好きなアイテムを組み合わせてご利用いただけます。</p>
+          </li>
+          <li class="features__item">
+            <div class="features__item-icon features__item-icon--2">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8v32M8 24h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="features__item-title">いつでも交換・返却OK</h3>
+            <p class="features__item-text">引越しや模様替えのタイミングで、いつでも家具を交換・返却できます。ライフスタイルの変化に柔軟に対応します。</p>
+          </li>
+          <li class="features__item">
+            <div class="features__item-icon features__item-icon--3">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 12V10M32 12V10M8 20h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="features__item-title">配送・設置費用は無料</h3>
+            <p class="features__item-text">全国への配送・設置・引き取りはすべて無料。重い家具の運搬も、熟練スタッフにお任せください。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section id="plans" class="plans">
+      <div class="plans__inner">
+        <p class="section-label">Plans</p>
+        <h2 class="section-title">料金プラン</h2>
+        <p class="plans__note">すべてのプランに配送・設置・保険が含まれています</p>
+        <ul class="plans__list">
+          <li class="plans__item">
+            <p class="plans__item-label">ライト</p>
+            <p class="plans__item-price"><span>¥3,980</span><span class="plans__item-per">/月</span></p>
+            <p class="plans__item-desc">一人暮らし・単身赴任に</p>
+            <ul class="plans__item-features">
+              <li>家具 最大3点</li>
+              <li>年2回の交換</li>
+              <li>配送・設置・撤去 無料</li>
+              <li>破損保険 付き</li>
+            </ul>
+            <a href="#" class="btn btn--outline-dark">このプランで始める</a>
+          </li>
+          <li class="plans__item plans__item--popular">
+            <p class="plans__item-popular-badge">人気No.1</p>
+            <p class="plans__item-label">スタンダード</p>
+            <p class="plans__item-price"><span>¥8,980</span><span class="plans__item-per">/月</span></p>
+            <p class="plans__item-desc">カップル・ファミリーに最適</p>
+            <ul class="plans__item-features">
+              <li>家具 最大8点</li>
+              <li>年4回の交換</li>
+              <li>配送・設置・撤去 無料</li>
+              <li>破損保険 付き</li>
+              <li>コーディネート相談 1回/年</li>
+            </ul>
+            <a href="#" class="btn btn--primary">このプランで始める</a>
+          </li>
+          <li class="plans__item">
+            <p class="plans__item-label">プレミアム</p>
+            <p class="plans__item-price"><span>¥19,800</span><span class="plans__item-per">/月</span></p>
+            <p class="plans__item-desc">こだわりのインテリアを</p>
+            <ul class="plans__item-features">
+              <li>家具 最大20点</li>
+              <li>無制限の交換</li>
+              <li>配送・設置・撤去 無料</li>
+              <li>破損保険 付き</li>
+              <li>コーディネート相談 無制限</li>
+              <li>優先配送サービス</li>
+            </ul>
+            <a href="#" class="btn btn--outline-dark">このプランで始める</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Flow -->
+    <section id="flow" class="flow">
+      <div class="flow__inner">
+        <p class="section-label">How it works</p>
+        <h2 class="section-title">ご利用の流れ</h2>
+        <ol class="flow__list">
+          <li class="flow__item">
+            <div class="flow__item-num">01</div>
+            <h3 class="flow__item-title">プランを選ぶ</h3>
+            <p class="flow__item-text">ライフスタイルに合ったプランをお選びください。まずは1ヶ月の無料トライアルからどうぞ。</p>
+          </li>
+          <li class="flow__item">
+            <div class="flow__item-num">02</div>
+            <h3 class="flow__item-title">家具を選ぶ</h3>
+            <p class="flow__item-text">500点以上のラインナップからお好みの家具を選択。スタイリストによる無料コーディネート相談も可能です。</p>
+          </li>
+          <li class="flow__item">
+            <div class="flow__item-num">03</div>
+            <h3 class="flow__item-title">配送・設置</h3>
+            <p class="flow__item-text">ご指定の日時に、専門スタッフが配送・設置まで行います。配送料・設置費用はすべて無料です。</p>
+          </li>
+          <li class="flow__item">
+            <div class="flow__item-num">04</div>
+            <h3 class="flow__item-title">交換・返却</h3>
+            <p class="flow__item-text">気分を変えたいとき、引っ越すときはいつでも交換・返却OK。専門スタッフが引き取りに伺います。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta__inner">
+        <p class="cta__label">Free Trial</p>
+        <h2 class="cta__title">まずは1ヶ月、<br />無料でお試しください。</h2>
+        <p class="cta__text">クレジットカードなしで登録できます。気に入らなければキャンセル料は一切かかりません。</p>
+        <a href="#" class="btn btn--primary btn--lg">無料トライアルを始める</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__logo">SKAN</p>
+        <nav class="footer__nav">
+          <a href="#">サービスについて</a>
+          <a href="#">家具ラインナップ</a>
+          <a href="#">よくある質問</a>
+          <a href="#">プライバシーポリシー</a>
+        </nav>
+        <p class="footer__copy">&copy; SKAN Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+/* ===========================
+   Reset & Base
+=========================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --c-bg:      #fdf8f4;
+  --c-bg-alt:  #f7ede6;
+  --c-accent:  #c4736a;
+  --c-dark:    #2d2420;
+  --c-mid:     #8b6560;
+  --c-border:  #e8d8d0;
+  --c-white:   #ffffff;
+  --ease:      cubic-bezier(.4, 0, .2, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: var(--c-bg);
+  color: var(--c-dark);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ===========================
+   Shared
+=========================== */
+.section-label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  letter-spacing: .3em;
+  color: var(--c-accent);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--c-dark);
+  margin-bottom: 32px;
+}
+
+/* ===========================
+   Header
+=========================== */
+.header {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  z-index: 100;
+  background: rgba(253, 248, 244, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--c-border);
+}
+.header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo { line-height: 1.2; }
+.header__logo-en {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  color: var(--c-dark);
+}
+.header__logo-ja {
+  display: block;
+  font-size: 10px;
+  color: var(--c-mid);
+  letter-spacing: .12em;
+  margin-top: 2px;
+}
+.header__nav {
+  display: flex;
+  gap: 32px;
+}
+.header__nav a {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14px;
+  letter-spacing: .15em;
+  color: var(--c-dark);
+  text-decoration: none;
+  transition: color .25s var(--ease);
+  position: relative;
+}
+.header__nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 0; height: 1px;
+  background: var(--c-accent);
+  transition: width .3s var(--ease);
+}
+.header__nav a:hover { color: var(--c-accent); }
+.header__nav a:hover::after { width: 100%; }
+
+/* ===========================
+   Hero
+=========================== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(160deg, #f9ede6 0%, #f0d8cc 40%, #e8c9b8 100%);
+}
+.hero__bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,.5) 0%, transparent 60%);
+}
+.hero__content {
+  position: relative;
+  text-align: center;
+  padding: 32px;
+}
+.hero__catch {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 13px;
+  letter-spacing: .3em;
+  color: var(--c-mid);
+  margin-bottom: 20px;
+}
+.hero__title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(56px, 10vw, 96px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--c-dark);
+  line-height: 1;
+  letter-spacing: .04em;
+  margin-bottom: 16px;
+}
+.hero__sub {
+  font-size: 13px;
+  color: var(--c-mid);
+  letter-spacing: .2em;
+  margin-bottom: 48px;
+}
+.hero__btn {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid var(--c-accent);
+  color: var(--c-accent);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  letter-spacing: .2em;
+  text-decoration: none;
+  transition: background .3s var(--ease), color .3s var(--ease);
+}
+.hero__btn:hover {
+  background: var(--c-accent);
+  color: var(--c-white);
+}
+
+/* ===========================
+   Concept
+=========================== */
+.concept {
+  padding: 100px 0;
+  background: var(--c-white);
+}
+.concept__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.concept__img-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(145deg, #f2ddd5 0%, #e8c4b4 100%);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.concept__img-placeholder::after {
+  content: 'Photo';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  letter-spacing: .2em;
+  color: rgba(196, 115, 106, .4);
+}
+.concept__body {
+  font-size: 14px;
+  line-height: 2.1;
+  color: #5a4a44;
+  margin-bottom: 1.2em;
+}
+
+/* ===========================
+   Menu
+=========================== */
+.menu {
+  padding: 100px 0;
+  background: var(--c-bg-alt);
+}
+.menu__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.menu__inner > .section-label,
+.menu__inner > .section-title {
+  text-align: center;
+}
+.menu__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 16px;
+}
+.menu__item {
+  background: var(--c-white);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.menu__item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(44, 24, 20, .1);
+}
+.menu__item-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+.menu__item-img--1 { background: linear-gradient(135deg, #f9d6d0 0%, #f0b8ae 100%); }
+.menu__item-img--2 { background: linear-gradient(135deg, #fef3c7 0%, #fcd34d 100%); }
+.menu__item-img--3 { background: linear-gradient(135deg, #d4c4b0 0%, #a08060 100%); }
+.menu__item-img--4 { background: linear-gradient(135deg, #fde8d0 0%, #f0c898 100%); }
+.menu__item-body { padding: 20px 22px 24px; }
+.menu__item-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--c-dark);
+}
+.menu__item-desc {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--c-mid);
+  margin-bottom: 12px;
+}
+.menu__item-price {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  color: var(--c-accent);
+  letter-spacing: .05em;
+}
+
+/* ===========================
+   Access
+=========================== */
+.access {
+  padding: 100px 0;
+  background: var(--c-white);
+}
+.access__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.access__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+  margin-top: 16px;
+}
+.access__map-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, #ede8e0 0%, #d8d0c4 100%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  letter-spacing: .2em;
+  color: rgba(139, 101, 96, .5);
+}
+.access__map-placeholder::after { content: 'Map'; }
+.access__info { list-style: none; }
+.access__info-row {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--c-border);
+  font-size: 14px;
+}
+.access__info-row:first-child { border-top: 1px solid var(--c-border); }
+.access__info-row dt {
+  color: var(--c-accent);
+  font-weight: 500;
+  letter-spacing: .06em;
+}
+.access__info-row dd { color: var(--c-dark); line-height: 1.8; }
+
+/* ===========================
+   Footer
+=========================== */
+.footer {
+  background: var(--c-dark);
+  text-align: center;
+  padding: 48px 32px;
+}
+.footer__logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255,255,255,.8);
+  letter-spacing: .1em;
+  margin-bottom: 12px;
+}
+.footer__copy {
+  font-size: 11px;
+  color: rgba(255,255,255,.3);
+  letter-spacing: .12em;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media screen and (max-width: 768px) {
+  .header__nav { display: none; }
+  .concept__inner { grid-template-columns: 1fr; gap: 40px; }
+  .menu__list { grid-template-columns: 1fr; }
+  .access__grid { grid-template-columns: 1fr; gap: 32px; }
+}

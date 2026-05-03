@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Perle | Web Coder Portfolio</title>
+    <meta
+      name="description"
+      content="フリーランスWEBコーダー Perle（ペルル）のポートフォリオサイトです。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」などぜひ、お気軽にご相談ください。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            Perle<br />Portfolio
+            <span class="header__logo-sub">Web Coder</span>
+          </div>
+          <button
+            type="button"
+            id="js-button-drawer"
+            class="header__menu-button"
+          >Menu</button>
+
+          <div id="js-drawer" class="header__contents">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#service" class="header__nav-link button">
+                    <span class="button__icon"><img src="./img/ico_service.svg" alt="" /></span>
+                    <span class="button__text">Service -</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#works" class="header__nav-link button">
+                    <span class="button__icon"><img src="./img/ico_works.svg" alt="" /></span>
+                    <span class="button__text">Works -</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#about" class="header__nav-link button">
+                    <span class="button__icon"><img src="./img/ico_about.svg" alt="" /></span>
+                    <span class="button__text">About -</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#flow" class="header__nav-link button">
+                    <span class="button__icon"><img src="./img/icon_flow.svg" alt="" /></span>
+                    <span class="button__text">Work flow -</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#message" class="header__nav-link button">
+                    <span class="button__icon"><img src="./img/ico_message.svg" alt="" /></span>
+                    <span class="button__text">Message -</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#contact" class="header__nav-link button button--bg">
+                    <span class="button__icon"><img src="./img/ico_mail.svg" alt="" /></span>
+                    <span class="button__text">Contact -</span>
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#twitter" class="header__nav-link button button--border">
+                    <span class="button__icon"><img src="./img/ico_twitter.svg" alt="" /></span>
+                    <span class="button__text">Twitter -</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- FV -->
+        <div class="fv">
+          <picture class="fv__img">
+            <source media="(min-width: 768px)" srcset="./img/img_fv.png" />
+            <img src="./img/sp/img_fv.png" alt="" />
+          </picture>
+          <div class="fv__contents">
+            <h1 class="fv__heading">
+              <span class="fv__heading-main">Web Coder -</span>
+              <span class="fv__heading-sub">ご覧いただきありがとうございます。<br />フリーランスWebコーダーの Perle（ペルル）と申します。</span>
+            </h1>
+          </div>
+        </div>
+
+        <!-- Service -->
+        <section id="service" class="section">
+          <div class="section__inner">
+            <h2 class="section__head" data-anim>
+              <span class="section__head-main">Service -</span>
+              <span class="section__head-sub">提供サービス</span>
+            </h2>
+            <p class="section__lead-text" data-anim>
+              行っているサービス内容です。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」など、是非、お気軽にご相談ください。
+            </p>
+            <div class="section__contents">
+              <ul class="service__list">
+                <li class="service__item" data-anim data-anim-d="1">
+                  <div class="service__item-img"><img src="./img/img_service1.svg" alt="" /></div>
+                  <h3 class="service__item-name">ホームページ制作</h3>
+                  <p class="service__item-text">ご要望に応じて柔軟にご提案させていただきます。目的を達成するためのホームページを一緒に作成していきましょう！</p>
+                </li>
+                <li class="service__item" data-anim data-anim-d="2">
+                  <div class="service__item-img"><img src="./img/img_service2.svg" alt="" /></div>
+                  <h3 class="service__item-name">ホームページ修正</h3>
+                  <p class="service__item-text">文言の変更や表示崩れなど、ホームページでのちょっとしたお困りごとに対応いたします。</p>
+                </li>
+                <li class="service__item" data-anim data-anim-d="3">
+                  <div class="service__item-img"><img src="./img/img_service3.svg" alt="" /></div>
+                  <h3 class="service__item-name">ホームページ相談</h3>
+                  <p class="service__item-text">ホームページ制作に関するご相談を無料でお受けしております。些細なことでもお気軽にご相談ください！</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Works -->
+        <section id="works" class="section section--alt">
+          <div class="section__inner">
+            <h2 class="section__head" data-anim>
+              <span class="section__head-main">Works -</span>
+              <span class="section__head-sub">実績紹介</span>
+            </h2>
+            <p class="section__lead-text" data-anim>
+              これまで制作したWebサイトです。また、当サイトも自ら制作していますので実績の一つとして御覧ください。
+            </p>
+            <div class="section__contents">
+              <ul class="works__list">
+                <li class="works__item" data-anim data-anim-d="1">
+                  <div class="works__item-img"><img src="./img/img_works1.jpg" alt="" /></div>
+                  <div class="works__item-body">
+                    <h3 class="works__item-name">ポートフォリオサイト</h3>
+                    <a href="#" class="works__item-link">詳しく見る</a>
+                  </div>
+                </li>
+                <li class="works__item" data-anim data-anim-d="2">
+                  <div class="works__item-img"><img src="./img/img_works2.jpg" alt="" /></div>
+                  <div class="works__item-body">
+                    <h3 class="works__item-name">スイーツ店公式サイト（サンプル）</h3>
+                    <a href="./works/sweets/index.html" target="_blank" class="works__item-link">詳しく見る</a>
+                  </div>
+                </li>
+                <li class="works__item" data-anim data-anim-d="3">
+                  <div class="works__item-img"><img src="./img/img_works3.jpg" alt="" /></div>
+                  <div class="works__item-body">
+                    <h3 class="works__item-name">家具のサブスクLP（サンプル）</h3>
+                    <a href="./works/furniture/index.html" target="_blank" class="works__item-link">詳しく見る</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+          <div class="section__inner">
+            <div class="about__container">
+              <div class="about__img" data-anim>
+                <img src="./img/img_about.png" alt="" />
+              </div>
+              <div class="about__text-contents">
+                <h2 class="section__head" data-anim>
+                  <span class="section__head-main">About -</span>
+                  <span class="section__head-sub">私について</span>
+                </h2>
+                <p class="about__text" data-anim>
+                  東京在住。病院薬剤師として働きながら、Webコーダーとしても活動しています。医療の世界で培った「正確さ・丁寧さ」を、コーディングにも活かしています。
+                </p>
+                <p class="about__text" data-anim>
+                  趣味は、海外旅行、写真を撮ること、カフェ巡りで、コーヒーを自分でゆっくり淹れることもあります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Flow -->
+        <section id="flow" class="section section--alt">
+          <div class="section__inner">
+            <h2 class="section__head" data-anim>
+              <span class="section__head-main">Work Flow -</span>
+              <span class="section__head-sub">制作の流れ</span>
+            </h2>
+            <p class="section__lead-text" data-anim>
+              ご相談〜納品までの大まかな流れです。状況に応じて柔軟に対応いたします。
+            </p>
+            <div class="section__contents">
+              <ol class="flow__list">
+                <li class="flow__item" data-anim data-anim-d="1">
+                  <p class="flow__item-num">1</p>
+                  <div class="flow__item-img"><img src="./img/img_flow1.svg" alt="" /></div>
+                  <h3 class="flow__item-name">ご相談・お見積り</h3>
+                  <p class="flow__item-text">要件や納期、予算などお気軽にご相談ください。対応内容に応じてお見積りをお送りいたします。</p>
+                </li>
+                <li class="flow__item" data-anim data-anim-d="2">
+                  <p class="flow__item-num">2</p>
+                  <div class="flow__item-img"><img src="./img/img_flow2.svg" alt="" /></div>
+                  <h3 class="flow__item-name">コーディング</h3>
+                  <p class="flow__item-text">デザインカンプを元にコーディングを行います。コーディング後は品質チェックを行い調整します。</p>
+                </li>
+                <li class="flow__item" data-anim data-anim-d="3">
+                  <p class="flow__item-num">3</p>
+                  <div class="flow__item-img"><img src="./img/img_flow3.svg" alt="" /></div>
+                  <h3 class="flow__item-name">確認</h3>
+                  <p class="flow__item-text">お客様にコーディングしたサイトをご確認頂きます。不足部分の修正と対応を行います。</p>
+                </li>
+                <li class="flow__item" data-anim data-anim-d="4">
+                  <p class="flow__item-num">4</p>
+                  <div class="flow__item-img"><img src="./img/img_flow4.svg" alt="" /></div>
+                  <h3 class="flow__item-name">納品</h3>
+                  <p class="flow__item-text">コーディング後のファイル一式を納品いたします。本番サーバーへのアップロードも対応可能です。</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- Message -->
+        <section id="message" class="section">
+          <div class="section__inner">
+            <div class="message__container">
+              <div class="message__img" data-anim>
+                <img src="./img/img_message.png" alt="" />
+              </div>
+              <div class="message__text-contents">
+                <h2 class="section__head" data-anim>
+                  <span class="section__head-main">Message -</span>
+                  <span class="section__head-sub">ご依頼をお考えの方へ</span>
+                </h2>
+                <p class="message__text" data-anim>
+                  静的なHTMLコーディングからWordPress化まで対応可能です。<br />デザインカンプの意図をしっかりと理解した上で、迅速、丁寧な対応でコーディング業務をサポートいたします！
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact / Twitter -->
+        <div id="contact" class="page-bottom">
+          <div class="page-bottom__item page-bottom__item--contact" data-anim>
+            <h2 class="section__head section__head--center">
+              <span class="section__head-main">Contact -</span>
+              <span class="section__head-sub">お問い合わせ</span>
+            </h2>
+            <a href="#" target="_blank" class="page-bottom__button">
+              <span class="button__icon"><img src="./img/ico_mail.svg" alt="" /></span>
+              <span class="button__text">Contact -</span>
+            </a>
+          </div>
+          <div id="twitter" class="page-bottom__item page-bottom__item--twitter" data-anim>
+            <h2 class="section__head section__head--center">
+              <span class="section__head-main">Twitter -</span>
+              <span class="section__head-sub">ツイッター</span>
+            </h2>
+            <a href="#" target="_blank" class="page-bottom__button">
+              <span class="button__icon"><img src="./img/ico_twitter.svg" alt="" /></span>
+              <span class="button__text">Twitter -</span>
+            </a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <small class="footer__copy">&copy; Perle All rights reserved.</small>
+        </footer>
+      </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
