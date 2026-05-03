@@ -179,6 +179,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--c-white);
   display: block;
   line-height: 1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .6);
 }
 .fv__heading-main::after {
   content: '';
@@ -191,11 +192,12 @@ img { max-width: 100%; height: auto; display: block; }
 .fv__heading-sub {
   font-size: 13px;
   font-family: "Noto Sans JP", sans-serif;
-  color: rgba(255, 255, 255, .85);
+  color: #fff;
   margin-top: 14px;
   display: block;
   line-height: 1.8;
   letter-spacing: .02em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .7);
 }
 
 /* ===========================
